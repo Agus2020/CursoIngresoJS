@@ -6,6 +6,6 @@ function mostrar()
 	var apellido="nadie";
 	apellido="Aquino";
 	alert(apellido);
-	alert("Esto funciona de mavarilla"); 
+	alert("testeo git"); 
 }
 
