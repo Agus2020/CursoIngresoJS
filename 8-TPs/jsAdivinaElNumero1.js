@@ -13,7 +13,7 @@ var contadorIntentos;
 function comenzar()
 {	
 	numeroSecreto=Math.floor(Math.random() * 100) + 1;
-	console.log(nunmeroSecreto);
+	console.log(numeroSecreto);
 }
 function verificar()
 {
