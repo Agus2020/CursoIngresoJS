@@ -9,7 +9,7 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
-
+contadorIntentos=0;
 function comenzar()
 {	
 	numeroSecreto=Math.floor(Math.random() * 100) + 1;
@@ -17,23 +17,23 @@ function comenzar()
 }
 function verificar()
 {
+	contadorIntentos++;
 	var numeroIngresado;
 	numeroIngresado=document.getElementById('numero').value;
 	numeroIngresado=parseInt(numeroIngresado);
 	if(numeroIngresado==numeroSecreto)
 	{
-		alert("sos un genio");
+		alert("Usted es un ganador!!! y en solo "+contadorIntentos+" intentos");
 	}
 	else
 	{
-		alert("loser");
 		if(numeroIngresado>numeroSecreto)
 		{
-			alert("Te pasaste");
+			alert("se paso");
 		}
 		else
 		{
-			alert("Te falta");
+			alert("falta");
 		}
 	}
 	
