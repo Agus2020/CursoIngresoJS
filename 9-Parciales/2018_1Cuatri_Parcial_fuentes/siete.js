@@ -4,37 +4,47 @@ function mostrar()
 	var total;
 	var sexo;
 	var contador;
-	var f;
-	var m;
-	f=0;
-	m=0;
+	var min;
+	var max=0;
+	var minsexo;
 	contador=0;
 	total=0;
 	while(contador<5)
 	{
 		nota=prompt('Ingrese nota');
 		nota=parseInt(nota);
-		while(!isNaN(nota))
+		while(isNaN(nota))
 		{
 			nota=prompt('Ingrese una nota entre 1 y 10');
 			nota=parseInt(nota);
 		}
-		total=total+nota;
 		sexo=prompt('Ingrese sexo');
-		if(sexo=='m'&&nota>5)
+		while(sexo!='f'&&sexo!='m')
 		{
-			m++;
-			m2++;
+			sexo=prompt('Ingrese sexo');
 		}
-		if(sexo=='f')
+		if(contador==0)
 		{
-			f++;
+			total=total+nota;
+			min=total;
+			minsexo=sexo;
 		}
+		else
+		{
+			total=total+nota;
+		}
+		if(min>nota)
+		{
+			min=nota;
+			minsexo=sexo;
+		}
+		if(nota>5&&sexo=='m')
+		{
+			max++;
+		}
+		contador++;
 	}
 	alert('El promedio de las notas es '+total/contador);
-	alert('La nota mas baja fue '+ +' y el sexo es ');
-	if(m2==true)
-	{
-		alert('Cantidad de varones con nota 6 o mayor'+m);
-	}
+	alert('La nota mas baja fue '+min+' y el sexo es '+minsexo);
+	alert('Cantidad de varones con nota 6 o mayor '+max);
 }

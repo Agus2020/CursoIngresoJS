@@ -7,6 +7,6 @@ function mostrar()
 	alto=parseInt(alto);
 	ancho=prompt('Ingrese ancho');
 	ancho=parseInt(ancho);
-	total=alto+ancho;
+	total=2*(alto+ancho);
 	alert('El perimetro es '+total);
 }
