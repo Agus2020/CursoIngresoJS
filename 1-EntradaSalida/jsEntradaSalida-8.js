@@ -4,5 +4,6 @@ mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
 {
-	
+	sueldo=100;
+	resultado=sueldo+(sueldo*10/100);
 }

@@ -7,13 +7,16 @@ function mostrar()
 	{
 		alert("EXCELENTE");
 	}
-	else if(random<9&&random>3)
+	else 
 	{
-		alert("APROBO");
-	}
-	else
-	{
-		alert("Vamos, la proxima se puede");
+		if(random>4)
+		{
+			alert("APROBO");
+		}
+		else
+		{
+			alert("Vamos, la proxima se puede");
+		}	
 	}
 	console.log(random);
 

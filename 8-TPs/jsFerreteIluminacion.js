@@ -44,7 +44,8 @@ function CalcularPrecio ()
 	 		{
 	 			descuento=30/100;
 	 		}	
-	 	}else
+	 	}
+	 	else
 	 	{
 		 	if(cantidad==4)
 		 	{
@@ -56,7 +57,8 @@ function CalcularPrecio ()
 		 		{
 		 			descuento=20/100;
 		 		}
-		 	}else
+		 	}
+		 	else
 		 	{
 
 			 	if(cantidad==3)

@@ -12,7 +12,7 @@ function mostrar()
 	{
 		nota[i]=prompt('Ingrese nota');
 		nota[i]=parseInt(nota[i]);
-		while(isNaN(nota[i]))
+		while(isNaN(nota[i])||nota[i]>10||nota[i]<0)
 		{
 			nota[i]=prompt('Ingrese una nota entre 1 y 10');
 			nota[i]=parseInt(nota[i]);
@@ -43,7 +43,7 @@ function mostrar()
 	}
 	alert('El promedio de las notas es '+total/i);
 	alert('La nota mas baja fue '+min+' y el sexo es '+minsexo);
-	alert('Cantidad de varones  '+max);
+	alert('Cantidad de varones aprobados '+max);
 }
 /*
 function mostrar()

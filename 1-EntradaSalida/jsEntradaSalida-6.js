@@ -6,11 +6,14 @@ function sumar()
 	var primerNumero;
 	var segundoNumero;
 	var total;
-	primerNumero=document.getElementById('numeroUno').value;
-	segundoNumero=document.getElementById('numeroDos').value;
-	primerNumero=parseInt(primerNumero);
-	segundoNumero=parseInt(segundoNumero);
-	total=primerNumero+segundoNumero;
-	alert('La suma es:'+total);
-}
+	primerNumero=document.getElementById('numeroUno').value;  // "1"
+	segundoNumero=document.getElementById('numeroDos').value; // "1"
 
+	primerNumero =parseInt(primerNumero); 
+
+	segundoNumero=parseInt(segundoNumero);
+
+	total=primerNumero+segundoNumero;
+
+	alert('el resultado es '+total);
+}

@@ -27,8 +27,8 @@ function mostrar()
 		case 21:
 		case 22:
 		case 23:
-		alert('es de noche');break;
 		case 24:
+		alert('es de noche');
 		case 0:
 		case 1:
 		case 2:

@@ -11,21 +11,24 @@ function mostrar()
 	{
 		alert(num1+','+num2);
 	}
-	if(num1>num2)
+	else
 	{
-		total=num1-num2;
-		alert(total);
-	}
-	if(num1<num2)
-	{
-		total=num1+num2;
-		if(total>10)
+		if(num1>num2)
 		{
-			alert('La suma es '+total+' y supero el diez');
+			total=num1-num2;
+			alert(total);
 		}
 		else
 		{
-			alert(total);
+			total=num1+num2;
+			if(total>10)
+			{
+				alert('La suma es '+total+' y supero el diez');
+			}
+			else
+			{
+				alert(total);
+			}
 		}
 	}
 }
