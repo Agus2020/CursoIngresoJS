@@ -44,14 +44,14 @@ function mostrar()
 			{
 				impares.push(num[ii]);
 			}
-		}
-		if(num[ii]>0)
-		{
-			positivo.push(num[ii]);
-		}
-		else
-		{
-			negativo.push(num[ii]);
+			if(num[ii]>0)
+			{
+				positivo.push(num[ii]);
+			}
+			else
+			{
+				negativo.push(num[ii]);
+			}
 		}
 		if(positivo[ii]>0)
 		{
@@ -78,6 +78,7 @@ function mostrar()
 	document.write('<br>e)');
 	document.write('la suma de los negativos es:'+res);
 	document.write('<br>f)');
-	document.write(letra[lmax]+'  ,  '+max+'   ');
-	document.write(letra[lmin]+'  ,  '+min);
+	document.write('('+letra[lmin]+' , '+min+ ')');
+	document.write('<br>');
+	document.write('('+letra[lmax]+' , '+max+ ')');
 }
