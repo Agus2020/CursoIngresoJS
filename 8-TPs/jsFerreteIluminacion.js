@@ -25,7 +25,7 @@ function CalcularPrecio ()
  	if(cantidad>5)
  	{
  		descuento=50/100;
- 		precioBruto=cantidad*precio;
+ 		precioBruto=(cantidad*precio)*descuento;
  		if(precioBruto>120)
  		{
  			precioDescuento=precioBruto*0.10;

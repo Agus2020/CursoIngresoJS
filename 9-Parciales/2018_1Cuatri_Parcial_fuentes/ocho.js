@@ -9,6 +9,8 @@ function mostrar()
 	var negativo=new Array();
 	var sum=0;
 	var res=0;
+	var lmax;
+	var lmin;
 	var s='s';
 	for(i=0;s=='s';i++)
 	{
@@ -16,7 +18,7 @@ function mostrar()
 		num[i]=parseInt(num[i]);
 		while(isNaN(num[i]) || num[i]>100 || num[i]<-100)
 		{
-			num[i]=prompt('Solo ingrese numeros');
+			num[i]=prompt('Solo ingrese numeros,(del -100 a 100) ');
 			num[i]=parseInt(num[i]);
 		}
 		letra[i]=prompt('Ingrese una letra');
@@ -43,9 +45,6 @@ function mostrar()
 				impares.push(num[ii]);
 			}
 		}
-	}
-	for(ii=0;i>ii;ii++)
-	{
 		if(num[ii]>0)
 		{
 			positivo.push(num[ii]);
@@ -54,10 +53,6 @@ function mostrar()
 		{
 			negativo.push(num[ii]);
 		}
-
-	}
-	for(ii=0;i>ii;ii++)
-	{
 		if(positivo[ii]>0)
 		{
 			sum=sum+positivo[ii];
@@ -65,8 +60,9 @@ function mostrar()
 		else
 		{
 			res=res+negativo[ii];
-		}	
+		}
 	}
+	sum=Math.round(sum/positivo.length);
 	max= Math.max(...num);
 	min= Math.min(...num);
 	lmax=num.indexOf(max);
@@ -78,7 +74,7 @@ function mostrar()
 	document.write('<br>c)');
 	document.write('cantidad de ceros:'+cero.length);
 	document.write('<br>d)');
-	document.write('el promedio es:'+sum/positivo.length);
+	document.write('el promedio es:'+sum);
 	document.write('<br>e)');
 	document.write('la suma de los negativos es:'+res);
 	document.write('<br>f)');

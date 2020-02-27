@@ -1,7 +1,14 @@
 function mostrar()
 {
-
-
-
-
-}//FIN DE LA FUNCIÓN
+	var a;
+	a=document.getElementById('a');
+	for(i=0;a='a';i++)
+	{
+		console.log(i);		
+		if(a=='a')
+		{
+			break;
+		}
+	}	
+}
+//FIN DE LA FUNCIÓN
